@@ -16,7 +16,7 @@ const s3 = new AWS.S3({
 const cloudwatchlogs = new AWS.CloudWatchLogs({apiVersion: '2014-03-28'});
 
 const pullCloudwatchLogs = () => {
-  $('#log-status').html(`<span>Status: <b class="warning-status">Loading...</b></span>`);
+  $('#log-status').html(`<span>Status: <span class="warning-status">Loading...</span></span>`);
   const logGroupName = '/aws/lambda/bucket-antivirus-function';
   $('#logs-container').html('');
   const logStreamsParams = {
@@ -37,7 +37,7 @@ const pullCloudwatchLogs = () => {
       data.events.forEach(event => {
         $('#logs-container').append(`<div>${event.message}</div>`);
       });
-      $('#log-status').html(`<span>Status: <b class="success-status">Loaded</b></span>`);
+      $('#log-status').html(`<span>Status: <span class="success-status">Loaded</span></span>`);
     });
   });
 }
