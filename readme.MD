@@ -13,7 +13,10 @@ To test *any* file, we first need to set up our authentication method for our AW
 7. To test a `CLEAN` file, select any file from your computer and click `Upload` (the upload might take a while).
 8. Once the file is uploaded you'll start seeing new entries in the logs. These logs are updated every 30 seconds, it will _always_ pick up the last log stream for the `/aws/lambda/bucket-antivirus-function` log group which refers to our AntiMalware scanner function.
 9. Wait until the entrie for the file you uploaded shows up in the logs and determine if it was scanned correctly. You should see something similar to:
-```----------- SCAN SUMMARY -----------
+
+
+```
+----------- SCAN SUMMARY -----------
 Known viruses: 6748100
 Engine version: 0.100.2
 Scanned directories: 0
@@ -23,7 +26,8 @@ Data scanned: 1.11 MB
 Data read: 1.10 MB (ratio 1.01:1)
 Time: 23.914 sec (0 m 23 s)
 
-Scan of s3://bucket-to-scan-spike/herokutest.png resulted in CLEAN```
+Scan of s3://bucket-to-scan-spike/herokutest.png resulted in CLEAN
+```
 
 
 10. To test an *infected* file, go to the [European Group for IT Security webpage and download their Antimalware test file](https://www.eicar.org/?page_id=3950). This file in any format will be detected as infected without risking your computer.
