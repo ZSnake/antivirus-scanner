@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>File uploader</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id="alert-container" class="upper-toast alert alert-success hide">
+      <div>
+        File uploaded successfully
+      </div>
+      <div id="success-close">
+        <i class="fa fa-times-circle fa-2x"></i>
+      </div>
+    </div>
+    <div class="app">
+      <div class="title">
+        <h1>File uploader <i class="fa fa-file"></i></h1>
+      </div>
+      <div class="main-container">
+        <div class="file-uploader-container">
+          <div class="file-uploader">
+            <div class="upload-element-container">
+              <label class="file-input btn btn-block btn-primary">
+                  Browse&hellip; <input id="file-input"  type="file" style="display: none;">
+              </label>
+            </div>
+            <div class="upload-element-container">
+              <button id="upload-button" class="upload-button btn btn-success btn-block">
+                <i class="fa fa-upload"></i> Upload
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logs-container">
+        <span id="log-status" class="log-status">Status: <b class="success-status">Loaded</b></span>
+        <pre id="logs-container" class="logs">
+        </pre>
+      </div>
+    </div>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+  <script src="environment.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</html>

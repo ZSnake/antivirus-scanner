@@ -1,0 +1,57 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  text-align: center;
+}
+
+.file-input {
+  padding: 25% 0;
+  font-weight: bolder;
+  size: 2em;
+  height: 150px;
+  vertical-align: middle;
+  border: black 5px dashed;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.file-uploader-container {
+  width: 30%;
+}
+.upload-button {
+  width: 100%;
+  margin: 20px 0;
+}
+.logs-container {
+  margin: 0 5%;
+}
+.logs {
+  height: 400px;
+  overflow: scroll;
+  text-align: left;
+}
+
+.upper-toast {
+  display: flex;
+  justify-content: space-between;
+}
+
+#success-close {
+  cursor: pointer;
+}
+
+.success-status {
+  color: lightgreen;
+  font-weight: bolder;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.warning-status {
+  color: lightcoral;
+  font-weight: bolder;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
