@@ -25,6 +25,7 @@ Time: 23.914 sec (0 m 23 s)
 
 Scan of s3://bucket-to-scan-spike/herokutest.png resulted in CLEAN```
 
+
 10. To test an *infected* file, go to the [European Group for IT Security webpage and download their Antimalware test file](https://www.eicar.org/?page_id=3950). This file in any format will be detected as infected without risking your computer.
 11. Once you've used this you should see a similar scan as above, but with `INFECTED` as result instead.
 
